@@ -87,5 +87,6 @@ public class MaxProduct {
         System.out.print(maxProduct + " = ");
         maxRam.print(" * ");
         System.out.println();
+        sc.close();
     }
 }

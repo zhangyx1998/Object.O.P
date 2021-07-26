@@ -39,6 +39,7 @@ public class MorseCode {
                     System.out.print(USAGE);
             }
         System.out.println();
+        sc.close();
     }
 
     public static void morseDecode(String input){
