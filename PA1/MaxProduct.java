@@ -9,6 +9,10 @@
  * series are streamed from standard input.
  * ----------------------------------------
  */
+
+// Usage (bash)
+// $> java MaxProduct.java 4 < data.txt
+
 import java.util.Scanner;
 
 public class MaxProduct {
@@ -65,14 +69,16 @@ public class MaxProduct {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int rotate_length = Integer.parseInt(args[0]),
-            input_length = Integer.parseInt(args[1]);
+        int rotate_length = Integer.parseInt(args[0]);
         RotateMemory ram = new RotateMemory(rotate_length), maxRam = ram;
         String str = sc.nextLine();
         int i = 0;
-        while (input_length > 0){
+        while (str.length() > 0){
             if (i >= str.length()){
-                str = sc.nextLine();
+                if (!sc.hasNext())
+                    break;
+                if ((str = sc.nextLine().trim()).isEmpty())
+                    break;
                 i = 0;
             }
             int nextInt = str.charAt(i) - '0';
@@ -82,7 +88,7 @@ public class MaxProduct {
                 maxRam = ram.dump();
             }
             i ++;
-            input_length --;
+            // input_length --;
         }
         System.out.print(maxProduct + " = ");
         maxRam.print(" * ");
