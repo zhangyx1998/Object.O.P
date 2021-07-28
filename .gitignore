@@ -1,0 +1,21 @@
+# gitignore itself
+# .gitignore
+
+# vscode configuration folder
+.vscode
+
+# Java Temp Filess
+*.class
+
+# Reference
+Reference
+
+# Compile path
+bin
+
+# Java Compile and Run script
+runJava
+
+# Node related
+node_modules
+package-lock.json
