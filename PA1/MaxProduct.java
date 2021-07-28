@@ -31,7 +31,7 @@ public class MaxProduct {
         public long rotate(int next) {
             // Store popped element in a temporary variable.
             int tmp = data[ptr];
-            //
+            // Insert the new queue element to its place.
             data[ptr] = next;
             if (++ptr >= length)
                 // Increment queue pointer, move to start if the pointer exceeds queue boundary.

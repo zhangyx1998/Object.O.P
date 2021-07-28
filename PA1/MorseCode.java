@@ -19,7 +19,7 @@ public class MorseCode {
     "      encode    Encode the given string of text, illegal character will be skipped.\n" + 
     "      decode    Decode the given string of morse code, unknown code will be skipped.";
     final public static String []codeSet = 
-    "–··· ·– –·–· –·· · ··–· ––· ···· ·· ·––– –·– ·–·· –– –· ––– ·––· ––·– ·–· ··· – ··– ···– ·–– –··– –·–– ––·· ·–––– ··––– ···–– ····– ····· –···· ––··· –––·· ––––· ––––– ·–·–·– ––··––"
+    ".- -... -.-. -.. . ..-. --. .... .. .--- -.- .-.. -- -. --- .--. --.- .-. ... - ..- ...- .-- -..- -.-- --.. .---- ..--- ...-- ....- ..... -.... --... ---.. ----. ----- .-.-.- --..--"
     .split(" ");
     final public static String charSet = 
     "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890.,";
